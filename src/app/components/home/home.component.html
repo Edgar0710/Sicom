@@ -1,0 +1,235 @@
+<app-header></app-header>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Agregar Destinatario
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12">
+          <div class="form-group position-relative">
+            <label>Nombre <span class="text-danger">*</span></label>
+            <em data-feather="user" class="fea icon-sm icons"></em>
+            <input type="text" class="form-control pl-5" placeholder="Nombre" name="s" required="" />
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group position-relative">
+            <label>Apellido Paterno <span class="text-danger">*</span></label>
+            <em data-feather="user-check" class="fea icon-sm icons"></em>
+            <input type="text" class="form-control pl-5" placeholder="Apellido Paterno" name="s" required="" />
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group position-relative">
+            <label>Apellido Materno <span class="text-danger">*</span></label>
+            <em data-feather="user-check" class="fea icon-sm icons"></em>
+            <input type="text" class="form-control pl-5" placeholder="Apellido Materno" name="s" required="" />
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group position-relative">
+            <label>Email <span class="text-danger">*</span></label>
+            <em data-feather="mail" class="fea icon-sm icons"></em>
+            <input type="email" class="form-control pl-5" placeholder="Email" name="email" required="" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-primary">Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Invoice Start -->
+<section class="bg-invoice bg-light">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-10">
+        <div class="card shadow rounded border-0">
+          <div class="card-body">
+            <div class="invoice-top pb-4 border-bottom">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="logo-invoice mb-2">
+                    Bienvenido Ivan<span class="text-primary"></span>
+                  </div>
+                  <a href="javascript:void(0)" class="text-primary h6"><em data-feather="link"
+                      class="fea icon-sm text-muted mr-2"></em>rei0406@hotmail.com</a>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-4 mt-4 mt-sm-0">
+                  <h5>Cuenta :</h5>
+                  <dl class="row mb-0">
+                    <dt class="col-2 text-muted">
+                      <em data-feather="lock" class="fea icon-sm"></em>
+                    </dt>
+                    <dd class="col-10 text-muted">
+                      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+                        class="video-play-icon text-muted">
+                        <p class="mb-0">Identificador:</p>
+                        <p class="mb-0">96001</p>
+                      </a>
+                    </dd>
+
+                    <dt class="col-2 text-muted">
+                      <em data-feather="mail" class="fea icon-sm"></em>
+                    </dt>
+                    <dd class="col-10 text-muted">
+                      <a href="mailto:contact@example.com" class="text-muted">rei0406@hotmail.com</a>
+                    </dd>
+                  </dl>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">Cargar emails</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01" />
+                <label class="custom-file-label" for="inputGroupFile01">Selecciona un archivo Excel</label>
+              </div>
+            </div>
+            <br />
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Agregar Destinatario Manualmente
+            </button>
+
+            <br />
+            <br />
+            <div class="invoice-table pb-4">
+              <div class="table-responsive bg-white shadow rounded">
+                <table class="table mb-0 table-center invoice-tb">
+                  <thead class="bg-light">
+                    <tr>
+                      <th scope="col" class="text-left">No.</th>
+                      <th scope="col" class="text-left">Email</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Apellido Paterno</th>
+                      <th scope="col">Apellido Materno</th>
+                      <th scope="col">Seleccionar</th>
+                      <th scope="col">Opciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-left">1</th>
+                      <td class="text-left">edgar@email.com</td>
+                      <td>Edgar</td>
+                      <td>Carrera</td>
+                      <td>Carrasco</td>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                          <label class="form-check-label" for="defaultCheck1" style="color: blue">
+                            Agregar
+                          </label>
+                        </div>
+                      </td>
+                      <td style="color: red">Editar/Eliminar</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-left">2</th>
+                      <td class="text-left">oscar@email.com</td>
+                      <td>Oscar</td>
+                      <td>Aranda</td>
+                      <td>Salas</td>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                          <label class="form-check-label" for="defaultCheck1" style="color: blue">
+                            Agregar
+                          </label>
+                        </div>
+                      </td>
+                      <td style="color: red">Editar/Eliminar</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-left">3</th>
+                      <td class="text-left">miguel@mail.com</td>
+                      <td>Miguel</td>
+                      <td>Aparicio</td>
+                      <td>Herrara</td>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                          <label class="form-check-label" for="defaultCheck1" style="color: blue">
+                            Agregar
+                          </label>
+                        </div>
+                      </td>
+                      <td style="color: red">Editar/Eliminar</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <div class="row">
+                <div class="container-fluid text-right">
+                  <div class="form-check ">
+                    <input class="form-check-input " type="checkbox" value="" id="defaultCheck1" />
+                    <label class="form-check-label" for="defaultCheck1" style="color: blue">
+                      Agregar Todos
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!--end row-->
+            </div>
+
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputPassword4">Asunto</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddress">Contenido</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Adjutar</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01" />
+                  <label class="custom-file-label" for="inputGroupFile01">Selecciona un archivo</label>
+                </div>
+              </div>
+              <br />
+
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--end col-->
+    </div>
+
+    <!--end row-->
+  </div>
+
+  <!--end container-->
+</section>
+<!--end section-->
+<!-- Invoice End -->
+<app-footer></app-footer>
